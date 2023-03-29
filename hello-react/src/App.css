@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -40,14 +41,22 @@
 .read-the-docs {
   color: #888;
 } */
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body{
   background-color: white;  
-  height: 100%;
-  width: 100%;
+  /* height: 100%; */
+  /* width: 100%; */
   /* margin-left: auto;
   margin-right: auto; */
-  margin: 1em auto;
+  margin: 0 auto;
   /* text-align: center; */
+  font-family: 'Exo 2', sans-serif;
+  
 }
 
 /* .App{
@@ -69,23 +78,60 @@ div{
 
 .box{
   /* display: inline-block; */
-  text-align: center;
+  text-align: left;
+  /* border-style: solid */
   /* justify-content: space-evenly; */
+}
+
+.main-container{
+  padding: 20px;
+}
+
+.larger-box{
+  margin-top:80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.larger-box h1{
+  /* background-color: red; */
+  width: 360px;
+  font-weight: bold;
+  font-size: 65px
+}
+
+.larger-box p{
+  width: 200px;
+  /* background-color: red; */
+}
+
+button{
+  margin-top: 40px;
+  padding: 10px;
+  font-family:'Exo 2', sans-serif; 
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 17px;
 }
 
 .second-container{
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  border: 3px solid black;
+  /* width: 100%; */
+  margin: 0 40px;
+  gap: 20px;
+  margin-top: 30px
+  /* border: 3px solid black; */
 }
 
 .first-container{
   background: rgb(14, 20, 59);
   color: white;
-  width:85%;
-  height: 60vh;
-  padding: 10px 60px 0px 40px;
-  margin-left: 20px;
+  /* width:100%; */
+  /* height: 60vh; */
+  padding: 10px 40px 0px 60px;
+  /* margin-left: 20px; */
   
 }
